@@ -1,0 +1,168 @@
+body {
+     font-family: Arial, sans-serif;
+     margin: 0px;
+     padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.header-left img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.header-center {
+  margin-left: 166px;
+}
+
+@media (max-width: 922px) {
+    .header-center {
+        display: none;
+    }
+}
+
+.header-center h1 {
+   color: white; 
+   font-size: 50px;
+}
+
+.header-right img {
+    width: 266px;
+}
+
+@media (max-width: 386px) {
+   .header-left img {
+        width: 74px;
+        border-radius: 50%;
+    }
+
+    .header-right img {
+        width: 230px;
+    }
+}
+
+#main-content {
+    text-align: center;
+    padding: 20px 20px 8px 20px;
+}
+
+#main-content h1{
+    font-size: 24px;
+}
+
+.description {
+    font-size: 20px;
+    color:#666;
+}
+
+#video-container {
+  text-align: center;
+  padding: 0px 20px 20px 20px;
+}
+
+.video-title {
+    margin-bottom: 40px;
+}
+
+#video-container h2{
+    font-size: 20px;
+}
+
+.iframe-class {
+    width: 560px;
+    height: 315px;
+}
+
+@media (max-width: 600px) {
+    .iframe-class {
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 386px) {
+    .iframe-class {
+        width: 240px;
+        height: 135px;
+    }
+}
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonial-title {
+    margin-bottom: 50px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 60px;
+}
+
+.testimonial img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin-right: 40px;
+    object-fit: cover;   
+}
+
+.testimonial p { 
+    text-align: justify; 
+    font-size: 30px; 
+    color: #333;
+    max-width: 500px;
+}
+
+@media (max-width: 870px) {
+    .testimonial img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+
+    .testimonial p {
+        text-align: justify;
+        font-size: 20px;
+        color: #333;
+    }
+}
+
+@media (max-width: 360px) {
+    .testimonial img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-right: 14px;
+        object-fit: cover;
+    }
+
+    .testimonial p {
+        text-align: justify;
+        font-size: 14px;
+        color: #333;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
